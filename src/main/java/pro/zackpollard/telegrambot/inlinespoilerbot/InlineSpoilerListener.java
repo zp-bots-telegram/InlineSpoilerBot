@@ -85,8 +85,8 @@ public class InlineSpoilerListener implements Listener {
                         InlineQueryResultArticle.builder().id("1" + uuid.toString()).replyMarkup(InlineKeyboardMarkup.builder().addRow(InlineKeyboardButton.builder().text("View Spoiler!").callbackData(uuid.toString()).build()).build()).inputMessageContent(InputTextMessageContent.builder().messageText("❕Moderate Spoiler Alert! Click below to view❕").build()).description(queryString).title("Moderate Spoiler").thumbUrl(moderateWarning).build(),
                         InlineQueryResultArticle.builder().id("2" + uuid.toString()).replyMarkup(InlineKeyboardMarkup.builder().addRow(InlineKeyboardButton.builder().text("View Spoiler!").callbackData(uuid.toString()).build()).build()).inputMessageContent(InputTextMessageContent.builder().messageText("❗️Huge Spoiler Alert Click below to view❗️").build()).description(queryString).title("Huge Spoiler").thumbUrl(hugeWarning).build(),
                         InlineQueryResultArticle.builder().id("3" + uuid.toString()).replyMarkup(InlineKeyboardMarkup.builder().addRow(InlineKeyboardButton.builder().text("View Spoiler!").callbackData(uuid.toString()).build()).build()).inputMessageContent(InputTextMessageContent.builder().messageText("‼️Insane Spoiler Alert Click below to confirm, and click again to view‼️").build()).description(queryString).title("Insane Spoiler, requires two clicks to view!").thumbUrl(insaneWarning).build()
-                ).cache_time(0)
-                .is_personal(true)
+                ).cacheTime(0)
+                .isPersonal(true)
                 //.switch_pm_text("Switch to PM!")
                 .build()
         );
