@@ -24,7 +24,7 @@ public class InlineSpoilerBot {
 
         //This simply takes the bots API key from the first command line argument sent to the bot.
         //You do not have to retrieve the API key in this way.
-        API_KEY = args[0];
+        API_KEY = System.getenv("BOT_API_KEY");
         new InlineSpoilerBot();
     }
 
